@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded',init);
 
 //Class
 class TypeWriter{
-    constructor(textelement,words,wait=200) {
+    constructor(textelement,words,wait=80) {
         this.textelement=textelement;
         this.text='';
         this.words=words;
@@ -72,9 +72,9 @@ class TypeWriter{
     
     //Type Speed 
     //we are using let here as the variable will be dyanamic
-    let typeSpeed = 300;
+    let typeSpeed = 100;
     if (this.isDeleting) {
-        typeSpeed=typeSpeed / 2.5;
+        typeSpeed=typeSpeed / 2.78;
     }
     //check if the word is complete
     if(!this.isDeleting && this.text === role){
